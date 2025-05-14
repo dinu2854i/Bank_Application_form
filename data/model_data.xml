@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<odoo>
+    <!-- Model for Digital Bank Application Form -->
+    <record id="model_bank_application_form" model="ir.model">
+        <field name="name">bank.application.form</field>
+        <field name="model">bank.application.form</field>
+        <field name="state">base</field>
+    </record>
+
+    <!-- Sequence for Digital Bank Application Form -->
+    <record id="bank_application_form_sequence" model="ir.sequence">
+        <field name="name"> Bank Application Form</field>
+        <field name="code">bank.application.form</field>
+        <field name="prefix">DBF</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+        <field name="implementation">no_gap</field>
+    </record>
+
+    <!-- View for Digital Bank Application Form -->
+    <record id="bank_application_form_view" model="ir.ui.view">
+        <field name="name">bank.application.form.view</field>
+        <field name="model">bank.application.form</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="full_name"/>
+                    <field name="account_type"/>
+                    <field name="email"/>
+                    <field name="mobile"/>
+                    <field name="e_sign_file"/>
+                    <field name="e_sign_filename"/>
+                    <field name="terms_accepted"/>
+                </group>
+                <footer>
+                    <button name="action_view_summary" type="object" string="View Summary" class="btn-primary"/>
+                    <button name="action_submit_application" type="object" string="Submit Application" class="btn-danger"/>
+                    <button name="action_complete_esign" type="object" string="Complete E-Sign" class="btn-primary"/>
+                    <button name="action_save" type="object" string="Save" class="btn-primary"/>
+                    <button string="Cancel" special="cancel" class="btn-default"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

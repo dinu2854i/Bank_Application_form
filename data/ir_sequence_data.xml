@@ -1,0 +1,9 @@
+<odoo>
+    <record id="seq_bank_application_form" model="ir.sequence">
+        <field name="name">Bank Application</field>
+        <field name="code">bank.application.form</field>
+        <field name="prefix">DBA</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+    </record>
+</odoo>

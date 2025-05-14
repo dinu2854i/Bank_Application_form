@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <template id="video_kyc_template" name="Video KYC">
+    <t t-call="website.layout">
+        <div class="container mt16">
+            <h2>Start Video KYC</h2>
+            <p>Click below to start your video KYC process.</p>
+            
+            <button t-att-data-form-id="form.id" class="btn btn-primary" t-on-click="startKyc">
+                Start Video KYC
+            </button>
+            
+            <p>If the KYC process has already started, you can join the call here:</p>
+            <a t-att-href="form.video_call_link" target="_blank">
+                Join Video KYC Call
+            </a>
+        </div>
+    </t>
+</template>
+
+</data>
+</odoo>
