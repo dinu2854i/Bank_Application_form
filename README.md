@@ -24,7 +24,7 @@ Custom Models & Workflows
 📦 Installation
 
 Clone this repository into your Odoo addons folder:
-git clone [https://github.com/your-username/digital_bank_form.git](https://github.com/dinu2854i/Bank_Application_form/)
+git clone (https://github.com/dinu2854i/Bank_Application_form)
 Restart your Odoo server.
 Activate Developer Mode.
 Search for Digital Bank Form in Apps and install it.
